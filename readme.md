@@ -4,7 +4,7 @@
 
 ----
 
-=== Интернет ресурсы по WebSocket
+### Интернет ресурсы по WebSocket
 
 WebSocket library
 * https://stackoverflow.com/questions/34423092/websocket-library
