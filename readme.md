@@ -86,3 +86,8 @@ int main()
 
 {"id":0,"method":"Runtime.runScript","params":{"scriptId":"5"}}
 ```
+
+Page.enable
+Page.addScriptToEvaluateOnNewDocument, {source: scpt}
+Page.navigate, {url: "http://localhost:4567/test"}
+
