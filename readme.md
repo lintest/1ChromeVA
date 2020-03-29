@@ -77,6 +77,7 @@ int main()
 }
 ```
 
+Ограничение 7790 байт
 
 ```javascript
 {"id":5,"method":"Runtime.enable"}
