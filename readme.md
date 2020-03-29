@@ -76,3 +76,12 @@ int main()
         beast::debug::buffers_to_string(sb.data()) << "\n";
 }
 ```
+
+
+```javascript
+{"id":5,"method":"Runtime.enable"}
+
+{"id":0,"method":"Runtime.compileScript","params":{"expression":"eval(a())","sourceURL":"file:///C:/Cpp/WebSocket/javascript.js","persistScript":true}}
+
+{"id":0,"method":"Runtime.runScript","params":{"scriptId":"5"}}
+```
