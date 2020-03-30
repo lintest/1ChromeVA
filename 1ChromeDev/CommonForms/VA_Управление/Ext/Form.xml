@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗапуститьБраузер" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗапуститьБраузер</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьБраузерРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="ФормаЗапуститьКлиентТестирования" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗапуститьКлиентТестирования</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьКлиентТестированияРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="Тест" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьТест</CommandName>
+				<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаДемонстрация" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Демонстрация</CommandName>
+				<ExtendedTooltip name="ФормаДемонстрацияРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаСнимокЭкрана" id="36">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СнимокЭкрана</CommandName>
+				<ExtendedTooltip name="ФормаСнимокЭкранаРасширеннаяПодсказка" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ГруппаУправленияБраузером" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа управления браузером</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа управления браузером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаУправленияБраузеромРасширеннаяПодсказка" id="27"/>
+		</CommandBar>
+		<UsualGroup name="ГруппаИдентификатор" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<InputField name="ИдентификаторКлиента" id="5">
+					<DataPath>ИдентификаторКлиента</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ИдентификаторКлиентаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИдентификаторКлиентаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<Button name="НовыйИдентификатор" id="10">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НовыйИдентификатор</CommandName>
+					<ExtendedTooltip name="НовыйИдентификаторРасширеннаяПодсказка" id="11"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ФайлПриложения" id="38">
+			<DataPath>ФайлПриложения</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<DropListButton>true</DropListButton>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ФайлПриложенияКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ФайлПриложенияРасширеннаяПодсказка" id="40"/>
+			<Events>
+				<Event name="StartChoice">ФайлПриложенияНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаURL" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа URL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа URL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаURLРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="URL" id="12">
+					<DataPath>АдресURL</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="URLКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="URLРасширеннаяПодсказка" id="14"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКартинка" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа картинка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа картинка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКартинкаРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="JavaScript" id="19">
+					<DataPath>JavaScript</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<PasswordMode>false</PasswordMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="JavaScriptКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="JavaScriptРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<PictureField name="СнимокЭкрана" id="33">
+					<DataPath>СнимокЭкрана</DataPath>
+					<Zoomable>true</Zoomable>
+					<ImageScale>25</ImageScale>
+					<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="35"/>
+				</PictureField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИдентификаторКлиента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресURL" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>URL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="JavaScript" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Java script</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстJSON" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МестоположениеКомпоненты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Местоположение компоненты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СнимокЭкрана" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снимок экрана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайлПриложения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла браузера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьТест" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьТест</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьКлиентТестирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить клиент тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить клиент тестирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьКлиентТестирования</Action>
+		</Command>
+		<Command name="НовыйИдентификатор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый идентификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НовыйИдентификатор</Action>
+		</Command>
+		<Command name="Демонстрация" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демонстрация</Action>
+		</Command>
+		<Command name="УправлениеБраузером" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление браузером</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление браузером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеБраузером</Action>
+		</Command>
+		<Command name="ЗапуститьБраузер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить браузер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить браузер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьБраузер</Action>
+		</Command>
+		<Command name="СнимокЭкрана" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снимок экрана</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снимок экрана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Form</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьСнимокЭкрана</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
