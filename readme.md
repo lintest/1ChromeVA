@@ -76,3 +76,19 @@ int main()
         beast::debug::buffers_to_string(sb.data()) << "\n";
 }
 ```
+
+Ограничение 7790 байт
+
+```javascript
+{"id":5,"method":"Runtime.enable"}
+
+{"id":0,"method":"Runtime.compileScript","params":{"expression":"eval(a())","sourceURL":"file:///C:/Cpp/WebSocket/javascript.js","persistScript":true}}
+
+{"id":0,"method":"Runtime.runScript","params":{"scriptId":"5"}}
+```
+
+```
+Page.enable
+Page.addScriptToEvaluateOnNewDocument, {source: scpt}
+Page.navigate, {url: "http://localhost:4567/test"}
+```
