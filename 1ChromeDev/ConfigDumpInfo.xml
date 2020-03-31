@@ -10,22 +10,20 @@
 		<Metadata name="Catalog.VA_ПримерДанных.Form.ФормаЭлемента.Form" id="a51f6fe4-c32a-40c1-9646-720551a8e125.0" configVersion="e0f54a55ba070645afc302a9cd078b0100000000"/>
 		<Metadata name="CommonCommand.VA_Управление" id="5aa82095-1e19-4bc0-8099-63acd47b8d01" configVersion="4fc562fa72781d45863a9df2b2b8c4d700000000"/>
 		<Metadata name="CommonCommand.VA_Управление.CommandModule" id="5aa82095-1e19-4bc0-8099-63acd47b8d01.2" configVersion="033bec50f66cbf43b08bab91d1fe070300000000"/>
-		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="2b36090c0ae4d148854354091f86fd6400000000"/>
-		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="c50a1dcffa2f9041827c8506a994552600000000"/>
+		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="530539811f7ce646a31a30b667fcc45300000000"/>
+		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="b2888b5168c7a44cad7a659de258f04b00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема" id="b62550c5-e5f4-4e9f-9831-83d0119749ab" configVersion="0e51f993d3b36d43ac66e61e54a82c7f00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема.Picture" id="b62550c5-e5f4-4e9f-9831-83d0119749ab.0" configVersion="e646dce0ef8c6c4e8b4035543b325a4a00000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="60886095-93e5-4297-aefc-9e03d7d53779" configVersion="252e0bf502785140b7d42cf9f250948700000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="60886095-93e5-4297-aefc-9e03d7d53779.0" configVersion="2711910a75224a4fb690ff869c86469a00000000"/>
-		<Metadata name="CommonTemplate.VA_JavaScript" id="9209dc5a-1054-4d98-ba39-08390605aff2" configVersion="cc787e2df0af9546a8a487c65cf7c76300000000"/>
-		<Metadata name="CommonTemplate.VA_JavaScript.Template" id="9209dc5a-1054-4d98-ba39-08390605aff2.0" configVersion="80737943347ee541ab628d82b43d483300000000"/>
-		<Metadata name="CommonTemplate.VA_LeaderLine" id="4d9d236a-6b29-4816-af39-41d694d528dc" configVersion="09de6626e18bd84a837077785989248b00000000"/>
-		<Metadata name="CommonTemplate.VA_LeaderLine.Template" id="4d9d236a-6b29-4816-af39-41d694d528dc.0" configVersion="919c4151f12b454ca45f6dd50864677b00000000"/>
-		<Metadata name="CommonTemplate.VA_jQuery" id="13792d75-7fbd-48df-916c-a3f8dd3036db" configVersion="cecc28ef14c00b41b63af047c79fa5a200000000"/>
-		<Metadata name="CommonTemplate.VA_jQuery.Template" id="13792d75-7fbd-48df-916c-a3f8dd3036db.0" configVersion="15d9accf5212a640a4ad39fdf494a74100000000"/>
-		<Metadata name="Configuration.Конфигурация" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="c76ea19c28efee4294774e0b3ef1283800000000"/>
-		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="5124725e-0d6b-4ab4-ac29-339a0533862c.8" configVersion="992cd64eba370440953ee60acb0714d100000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="4fe072afd147424789247ef1df911e5a00000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="e0979190eba0914a81c5edc22a93075500000000"/>
+		<Metadata name="CommonTemplate.VA_LeaderLine" id="95b2783f-d003-4c4e-8848-00defdd50a83" configVersion="6f06e205b22f7246b27a3703d813157b00000000"/>
+		<Metadata name="CommonTemplate.VA_LeaderLine.Template" id="95b2783f-d003-4c4e-8848-00defdd50a83.0" configVersion="a612b35c70ad014b82617c0de0338fc500000000"/>
+		<Metadata name="CommonTemplate.VA_jQuery" id="2c2c60a3-5610-4a17-9e58-f5e3da27ddfb" configVersion="3c7fefd45fe38346b95d349eb917b10f00000000"/>
+		<Metadata name="CommonTemplate.VA_jQuery.Template" id="2c2c60a3-5610-4a17-9e58-f5e3da27ddfb.0" configVersion="f066f19b244d6147a86711df5776878e00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="8748a231a90d5340b11b2e08ef914eea00000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="5124725e-0d6b-4ab4-ac29-339a0533862c.8" configVersion="c44641eafed99543a6072afbd16560e600000000"/>
 		<Metadata name="Configuration.Конфигурация.MainSectionPicture" id="5124725e-0d6b-4ab4-ac29-339a0533862c.c" configVersion="3b55e8958f694e44b61ab2d844b983de00000000"/>
-		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="5124725e-0d6b-4ab4-ac29-339a0533862c.6" configVersion="4e05e5b17ea10546a60d7aca1ec81e5100000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="5124725e-0d6b-4ab4-ac29-339a0533862c.6" configVersion="12590949b5992f46992b5a3cffc9b97400000000"/>
 		<Metadata name="DataProcessor._1ChromeDev" id="c61674ed-8383-43c9-bcc9-3cf444ece170" configVersion="123e1befd5334741a04fd6c3a6b8c6a600000000">
 			<Metadata name="DataProcessor._1ChromeDev.Attribute.URL" id="0bdc23bd-e896-47d1-a3f0-f92863fc7379"/>
 			<Metadata name="DataProcessor._1ChromeDev.Attribute.component" id="2a378be1-3b6d-47c6-8c8e-6613cd7d107a"/>

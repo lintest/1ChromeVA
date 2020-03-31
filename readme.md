@@ -82,9 +82,11 @@ int main()
 ```javascript
 {"id":5,"method":"Runtime.enable"}
 
-{"id":0,"method":"Runtime.compileScript","params":{"expression":"eval(a())","sourceURL":"file:///C:/Cpp/WebSocket/javascript.js","persistScript":true}}
+{"id":0,"method":"Runtime.compileScript","params":{"expression":"eval(a())","sourceURL":"file:///C:/Cpp/WebSocket/leader-line.min.js","persistScript":true}}
 
 {"id":0,"method":"Runtime.runScript","params":{"scriptId":"5"}}
+
+eval.apply(null, ["var testvalue10 = 15;"]);
 ```
 
 ```

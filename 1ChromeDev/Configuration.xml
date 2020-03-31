@@ -183,7 +183,6 @@
 			<CommonPicture>VA_Подсистема</CommonPicture>
 			<Role>Администратор</Role>
 			<CommonTemplate>VA_1cWinCtrl</CommonTemplate>
-			<CommonTemplate>VA_JavaScript</CommonTemplate>
 			<CommonTemplate>VA_jQuery</CommonTemplate>
 			<CommonTemplate>VA_LeaderLine</CommonTemplate>
 			<CommonCommand>VA_Управление</CommonCommand>
