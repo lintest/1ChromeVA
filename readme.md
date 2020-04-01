@@ -80,11 +80,15 @@ int main()
 Ограничение 7790 байт
 
 ```javascript
-{"id":5,"method":"Runtime.enable"}
+{"id":0,"method":"Runtime.enable"}
+
+{"id":1,"method":"Runtime.compileScript","params":{"expression":"S()","sourceURL":"c:\\Chrome\\javascript.js","persistScript":true}}
+
+{"id":2,"method":"Runtime.runScript","params":{"scriptId":"5"}}
 
 {"id":0,"method":"Runtime.compileScript","params":{"expression":"eval(a())","sourceURL":"file:///C:/Cpp/WebSocket/leader-line.min.js","persistScript":true}}
 
-{"id":0,"method":"Runtime.runScript","params":{"scriptId":"5"}}
+{"id":0,"method":"Page.captureScreenshot","params":{"format":"png"}}
 
 eval.apply(null, ["var testvalue10 = 15;"]);
 ```
@@ -93,4 +97,18 @@ eval.apply(null, ["var testvalue10 = 15;"]);
 Page.enable
 Page.addScriptToEvaluateOnNewDocument, {source: scpt}
 Page.navigate, {url: "http://localhost:4567/test"}
+```
+
+Инициализация окружения
+```javascript
+(function (base, files) {
+    files.forEach(file => fetch(base + file)
+        .then(response => response.text())
+        .then(text => eval.apply(null, [text]))
+    )
+}("http://localhost/vanessa/", [
+    "jquery.min.js",
+    "leader-line.min.js",
+    "library.js",
+]));
 ```
