@@ -82,6 +82,10 @@ int main()
 ```javascript
 {"id":0,"method":"Runtime.enable"}
 
+
+
+{"id":1,"method":"Page.createIsolatedWorld","params":{"frameId":"09C3B2409AA7CF43D46172A9FD8628B4"}}
+
 {"id":1,"method":"Runtime.compileScript","params":{"expression":"S()","sourceURL":"c:\\Chrome\\javascript.js","persistScript":true}}
 
 {"id":2,"method":"Runtime.runScript","params":{"scriptId":"5"}}
