@@ -94,6 +94,8 @@ eval.apply(null, ["var testvalue10 = 15;"]);
 ```
 
 ```
+Page.createIsolatedWorld
+
 Page.enable
 Page.addScriptToEvaluateOnNewDocument, {source: scpt}
 Page.navigate, {url: "http://localhost:4567/test"}

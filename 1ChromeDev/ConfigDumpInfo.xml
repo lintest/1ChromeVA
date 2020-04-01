@@ -10,12 +10,12 @@
 		<Metadata name="Catalog.VA_ПримерДанных.Form.ФормаЭлемента.Form" id="a51f6fe4-c32a-40c1-9646-720551a8e125.0" configVersion="e0f54a55ba070645afc302a9cd078b0100000000"/>
 		<Metadata name="CommonCommand.VA_Управление" id="5aa82095-1e19-4bc0-8099-63acd47b8d01" configVersion="4fc562fa72781d45863a9df2b2b8c4d700000000"/>
 		<Metadata name="CommonCommand.VA_Управление.CommandModule" id="5aa82095-1e19-4bc0-8099-63acd47b8d01.2" configVersion="033bec50f66cbf43b08bab91d1fe070300000000"/>
-		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="530539811f7ce646a31a30b667fcc45300000000"/>
-		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="b2888b5168c7a44cad7a659de258f04b00000000"/>
+		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="977faa2b601d564eb6f7cc9f1bd58cb700000000"/>
+		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="9a65ea778e5dcb4eb732372d03b18a3000000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема" id="b62550c5-e5f4-4e9f-9831-83d0119749ab" configVersion="0e51f993d3b36d43ac66e61e54a82c7f00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема.Picture" id="b62550c5-e5f4-4e9f-9831-83d0119749ab.0" configVersion="e646dce0ef8c6c4e8b4035543b325a4a00000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="4fe072afd147424789247ef1df911e5a00000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="e0979190eba0914a81c5edc22a93075500000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="2699daa3daec4548a1e11c4d9777a03000000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="f7e14de677568749b0f65c9e550cbc0e00000000"/>
 		<Metadata name="CommonTemplate.VA_LeaderLine" id="95b2783f-d003-4c4e-8848-00defdd50a83" configVersion="6f06e205b22f7246b27a3703d813157b00000000"/>
 		<Metadata name="CommonTemplate.VA_LeaderLine.Template" id="95b2783f-d003-4c4e-8848-00defdd50a83.0" configVersion="a612b35c70ad014b82617c0de0338fc500000000"/>
 		<Metadata name="CommonTemplate.VA_jQuery" id="2c2c60a3-5610-4a17-9e58-f5e3da27ddfb" configVersion="3c7fefd45fe38346b95d349eb917b10f00000000"/>
@@ -32,8 +32,8 @@
 			<Metadata name="DataProcessor._1ChromeDev.Attribute.browser" id="b6fa099c-3189-4dde-8a62-2078a7dd7a2e"/>
 			<Metadata name="DataProcessor._1ChromeDev.Attribute.domain" id="f3836467-5fe6-4d48-9dfd-b732d6351b77"/>
 		</Metadata>
-		<Metadata name="DataProcessor._1ChromeDev.Form._1ChromeDev" id="299e6c44-4835-4e3d-b46f-cc76a78ef5fa" configVersion="c75e74f5907b084bb326119af1c84e1800000000"/>
-		<Metadata name="DataProcessor._1ChromeDev.Form._1ChromeDev.Form" id="299e6c44-4835-4e3d-b46f-cc76a78ef5fa.0" configVersion="eebbd55efc82f64582966288709e1c3100000000"/>
+		<Metadata name="DataProcessor._1ChromeDev.Form._1ChromeDev" id="299e6c44-4835-4e3d-b46f-cc76a78ef5fa" configVersion="e464ca4dcc109e4cb624e26d86b243cf00000000"/>
+		<Metadata name="DataProcessor._1ChromeDev.Form._1ChromeDev.Form" id="299e6c44-4835-4e3d-b46f-cc76a78ef5fa.0" configVersion="ec59925454630341a04e3b00058418d900000000"/>
 		<Metadata name="DataProcessor._1ChromeDev.Form._1ChromeDev.Help" id="299e6c44-4835-4e3d-b46f-cc76a78ef5fa.1" configVersion="7c110eacb5b4494ba21e0c0d1325b24f00000000"/>
 		<Metadata name="DataProcessor._1ChromeDev.Template._1cWinCtrl" id="14a73c57-ce88-4fae-8cdf-0cbea8abf47b" configVersion="708dbe8335b19f489e0ddbf26ec2dc9300000000"/>
 		<Metadata name="DataProcessor._1ChromeDev.Template._1cWinCtrl.Template" id="14a73c57-ce88-4fae-8cdf-0cbea8abf47b.0" configVersion="56a36cdc5b0c354f813fa87f8ea2522000000000"/>
