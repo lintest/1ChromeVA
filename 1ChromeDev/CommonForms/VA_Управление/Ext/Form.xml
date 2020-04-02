@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -36,21 +37,43 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<CommandBar name="ГруппаУправленияБраузером" id="26">
+		<InputField name="АдресПубликации" id="49">
+			<DataPath>АдресПубликации</DataPath>
+			<ContextMenu name="АдресПубликацииКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="АдресПубликацииРасширеннаяПодсказка" id="51"/>
+			<Events>
+				<Event name="OnChange">АдресПубликацииПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаСоединение" id="47">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа управления браузером</v8:content>
+					<v8:content>Группа соединение</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа управления браузером</v8:content>
+					<v8:content>Группа соединение</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ГруппаУправленияБраузеромРасширеннаяПодсказка" id="27"/>
-		</CommandBar>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСоединениеРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="ИмяКомпьютера" id="41">
+					<DataPath>ИмяКомпьютера</DataPath>
+					<ContextMenu name="ИмяКомпьютераКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ИмяКомпьютераРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="Порт" id="44">
+					<DataPath>Порт</DataPath>
+					<ContextMenu name="ПортКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаИдентификатор" id="8">
 			<Title>
 				<v8:item>
@@ -71,9 +94,14 @@
 			<ChildItems>
 				<InputField name="ИдентификаторКлиента" id="5">
 					<DataPath>ИдентификаторКлиента</DataPath>
-					<ReadOnly>true</ReadOnly>
+					<DropListButton>true</DropListButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<TextEdit>false</TextEdit>
 					<ContextMenu name="ИдентификаторКлиентаКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="ИдентификаторКлиентаРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="OnChange">АдресПубликацииПриИзменении</Event>
+					</Events>
 				</InputField>
 				<Button name="НовыйИдентификатор" id="10">
 					<Type>UsualButton</Type>
@@ -139,6 +167,7 @@
 			<ChildItems>
 				<InputField name="JavaScript" id="19">
 					<DataPath>JavaScript</DataPath>
+					<DefaultItem>true</DefaultItem>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<AutoMaxHeight>false</AutoMaxHeight>
 					<PasswordMode>false</PasswordMode>
@@ -261,7 +290,53 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Имя файла браузера</v8:content>
+					<v8:content>Интернет браузер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКомпьютера" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя компьютера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Порт" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресПубликации" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес веб-публикации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

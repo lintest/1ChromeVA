@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -53,7 +54,7 @@
 			<ExtendedTooltip name="ГруппаБраузерРасширеннаяПодсказка" id="83"/>
 			<ChildItems>
 				<InputField name="browser" id="38">
-					<DataPath>Объект.browser</DataPath>
+					<DataPath>1/0:b6fa099c-3189-4dde-8a62-2078a7dd7a2e</DataPath>
 					<DropListButton>false</DropListButton>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="browserКонтекстноеМеню" id="39"/>
@@ -63,7 +64,7 @@
 					</Events>
 				</InputField>
 				<InputField name="port" id="84">
-					<DataPath>Объект.port</DataPath>
+					<DataPath>1/0:44ad4aa6-31e6-4226-b765-391ade811f32</DataPath>
 					<ContextMenu name="portКонтекстноеМеню" id="85"/>
 					<ExtendedTooltip name="portРасширеннаяПодсказка" id="86"/>
 				</InputField>
@@ -87,12 +88,12 @@
 			<ExtendedTooltip name="ГруппаURLРасширеннаяПодсказка" id="78"/>
 			<ChildItems>
 				<InputField name="URL" id="74">
-					<DataPath>Объект.URL</DataPath>
+					<DataPath>1/0:0bdc23bd-e896-47d1-a3f0-f92863fc7379</DataPath>
 					<ContextMenu name="URLКонтекстноеМеню" id="75"/>
 					<ExtendedTooltip name="URLРасширеннаяПодсказка" id="76"/>
 				</InputField>
 				<InputField name="WS" id="79">
-					<DataPath>Объект.WS</DataPath>
+					<DataPath>1/0:3a2a077c-07b1-4451-b4dd-cd9e45184ff0</DataPath>
 					<ContextMenu name="WSКонтекстноеМеню" id="80"/>
 					<ExtendedTooltip name="WSРасширеннаяПодсказка" id="81"/>
 				</InputField>
@@ -136,7 +137,7 @@
 					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="60"/>
 					<ChildItems>
 						<InputField name="Домен" id="41">
-							<DataPath>Объект.domain</DataPath>
+							<DataPath>1/0:f3836467-5fe6-4d48-9dfd-b732d6351b77</DataPath>
 							<TitleLocation>Top</TitleLocation>
 							<Width>10</Width>
 							<ListChoiceMode>true</ListChoiceMode>
@@ -253,9 +254,15 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject._1ChromeDev</v8:Type>
+				<v8:TypeId>1033c170-5938-4a09-b516-5f3c12ba92f8</v8:TypeId>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:0bdc23bd-e896-47d1-a3f0-f92863fc7379</Field>
+				<Field>1/0:44ad4aa6-31e6-4226-b765-391ade811f32</Field>
+				<Field>1/0:b6fa099c-3189-4dde-8a62-2078a7dd7a2e</Field>
+				<Field>1/0:f3836467-5fe6-4d48-9dfd-b732d6351b77</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="Методы" id="10">
 			<Title>
@@ -336,6 +343,7 @@
 			</Picture>
 			<Action>ВыполнитьТест</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьURL" id="2">
 			<Title>

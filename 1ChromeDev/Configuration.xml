@@ -183,10 +183,10 @@
 			<CommonPicture>VA_Подсистема</CommonPicture>
 			<Role>Администратор</Role>
 			<CommonTemplate>VA_1cWinCtrl</CommonTemplate>
-			<CommonTemplate>VA_jQuery</CommonTemplate>
-			<CommonTemplate>VA_LeaderLine</CommonTemplate>
 			<CommonCommand>VA_Управление</CommonCommand>
+			<CommonCommand>VA_ChromeDev</CommonCommand>
 			<CommonForm>VA_Управление</CommonForm>
+			<CommonForm>VA_ChromeDev</CommonForm>
 			<Catalog>VA_ПримерДанных</Catalog>
 			<DataProcessor>_1ChromeDev</DataProcessor>
 		</ChildObjects>
