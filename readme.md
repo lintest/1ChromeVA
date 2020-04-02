@@ -2,6 +2,10 @@
 посредством протокола Chrome DevTools Protocol.
 * https://chromedevtools.github.io/devtools-protocol/
 
+```javascript
+{"id":1,"method":"Page.createIsolatedWorld","params":{"frameId":"09C3B2409AA7CF43D46172A9FD8628B4"}}
+````
+    
 ----
 
 ### Интернет ресурсы по WebSocket
