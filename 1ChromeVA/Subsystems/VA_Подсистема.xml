@@ -22,9 +22,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.VA_Управление</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Администратор</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.VA_Управление</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.VA_ChromeDev</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.VA_ChromeDev</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor._1ChromeDev</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">c5faca56-c67b-46da-ba88-42d8ab513eb4</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">480c8e42-12fe-4392-8f63-82b1fab99584</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f1d6a69e-8c74-4fe4-90b7-195ce0eb45a1</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
