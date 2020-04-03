@@ -190,7 +190,7 @@
 	|let enjoyhint = new EnjoyHint();
 	|let button = elem('ФормаСоздать');
 	|let text = 'Нажмите кнопку «Создать» для ввода нового элемента!';
-	|let array_enjoy = [{selector:button, description: text, showSkip:false}];
+	|let array_enjoy = [{selector:button, description: text, showSkip:false, shape:'circle'}];
 	|enjoyhint.set(array_enjoy); 
 	|enjoyhint.run(); 
 	|$('.enjoyhint_close_btn').hide();
@@ -260,9 +260,33 @@
 	ПолеАртикул.Активизировать();
 	ПолеАртикул.ВвестиТекст("Текущее время: " + ТекстКомментария);
 	
+	Скрипт = 
+	"{
+	|
+	|let find_btn = elem('ФормаЗаписатьИЗакрыть');
+	|let enjoyhint = new EnjoyHint();
+	|let text = 'Для записи нового элмента нажмите кнопку «Записать и закрыть»!';
+	|let array_enjoy = [{selector:find_btn,description: text, showSkip:false,}];
+	|enjoyhint.set(array_enjoy); 
+	|enjoyhint.run(); 
+	|$('.enjoyhint_close_btn').hide();
+	|setTimeout(() => (enjoyhint.stop()), 5000);
+	|
+	|}";
+		
+	ВыполнитьJavaScript(Скрипт);
+	
+	ПодключитьОбработчикОжидания("ВыполнитьТест_Шаг5", 5, Истина);
+		
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ВыполнитьТест_Шаг5()
+	
 	// Записать и закрыть новый товар, нажав на кнопку "Записать и закрыть".
 	КнопкаЗаписатьИЗакрыть = ФормаНовогоТовара.НайтиОбъект(Тип("ТестируемаяКнопкаФормы"), , "ФормаЗаписатьИЗакрыть");
 	КнопкаЗаписатьИЗакрыть.Нажать();
+	
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// *** Проверить выполнение теста - найти записанный новый товар в списке и прочитать его поля.
@@ -348,6 +372,7 @@
 	ПараметрыКоманды = Новый Структура("frameId", ИдентификаторФрейма);
 	ДанныеJSON = ВыполнитьКомандуХрома("Page.createIsolatedWorld", ПараметрыКоманды);
 	КонтекстJavaScript = ДанныеJSON.result.executionContextId;
+	Постфикс = Формат(ТекущаяУниверсальнаяДатаВМиллисекундах(), "ЧГ=");
 	
 	ВыполнитьJavaScript("	
 	|
@@ -357,14 +382,14 @@
 	|        .then(text => eval.apply(null, [text]))
 	|    )
 	|    let node = document.createElement('link');
-	|    node.href = ""/vanessa/enjoyhint.css"";
-	|    node.rel = ""stylesheet"";
+	|    node.href = '/vanessa/enjoyhint.css';
+	|    node.rel = 'stylesheet';
 	|    window.top.document.body.appendChild(node);
-	|}(""http://localhost/vanessa/"", [
-	|    ""jquery.min.js"",
-	|    ""enjoyhint.min.js"",
-	|    ""leader-line.min.js"",
-	|    ""library.js"",
+	|}('http://localhost/vanessa/', [
+	|    'jquery.min.js',
+	|    'enjoyhint.min.js',
+	|    'leader-line.min.js',
+	|    'library.js?" + Постфикс +"',
 	|]));
 	|
 	|");	
