@@ -46,8 +46,6 @@
 	|setTimeout(() => (arrow({ x: '80%', y: '70%' }, { x: '20%', y: '30%' }, 5000, { color: 'blue' })), 25000);	
 	|";
 	
-	ТекстJSON = "{id: 1, method:'Page.captureScreenshot', params:{format:'png', quality=85, fromSurface:false}}";
-	
 	МакетКомпоненты = ПолучитьОбщийМакет("VA_1cWinCtrl");
 	МестоположениеКомпоненты = ПоместитьВоВременноеХранилище(МакетКомпоненты, УникальныйИдентификатор);
 	
@@ -186,7 +184,19 @@
 	ГлавноеОкноТестКлиента.ВыполнитьКоманду("e1cib/navigationpoint/VA_Подсистема");
 	ГлавноеОкноТестКлиента.ВыполнитьКоманду("e1cib/navigationpoint/VA_Подсистема/Справочник.VA_ПримерДанных.Команда.ОткрытьСписок");
 	
-	Скрипт = "arrow({x:'10%', y:'60%'}, border('ФормаСоздать', 5000), 5000, {color:'red', size: 5});";
+	Скрипт = 
+	"{
+	|
+	|let enjoyhint = new EnjoyHint();
+	|let button = elem('ФормаСоздать');
+	|let text = 'Нажмите кнопку «Создать» для ввода нового элемента!';
+	|let array_enjoy = [{selector:button, description: text, showSkip:false}];
+	|enjoyhint.set(array_enjoy); 
+	|enjoyhint.run(); 
+	|$('.enjoyhint_close_btn').hide();
+	|setTimeout(() => (enjoyhint.stop()), 5000);
+	|
+	|}";
 	ВыполнитьJavaScript(Скрипт);
 	
 	ПодключитьОбработчикОжидания("ВыполнитьТест_Шаг2", 5, Истина);
@@ -346,8 +356,13 @@
 	|        .then(response => response.text())
 	|        .then(text => eval.apply(null, [text]))
 	|    )
+	|    let node = document.createElement('link');
+	|    node.href = ""/vanessa/enjoyhint.css"";
+	|    node.rel = ""stylesheet"";
+	|    window.top.document.body.appendChild(node);
 	|}(""http://localhost/vanessa/"", [
 	|    ""jquery.min.js"",
+	|    ""enjoyhint.min.js"",
 	|    ""leader-line.min.js"",
 	|    ""library.js"",
 	|]));

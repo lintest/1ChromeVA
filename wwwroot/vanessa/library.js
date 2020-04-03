@@ -21,7 +21,7 @@ function selected() {
     return getActiveElement();
 }
 
-function findFormElement(id) {
+function elem(id) {
     let element = $('span.framePress:visible').filter((i, e) => e.firstChild.id.endsWith('_' + id))[0];
     if (!element) element = $('label.field:visible').filter((i, e) => (e.id.endsWith('_' + id)))[0];
     return element;
@@ -63,7 +63,7 @@ function fullscreen(mode) {
 }
 
 function border(id, timeout = 3000, options = undefined) {
-    let px = value => (typeof (value) == 'number' ? value + 'px' : value);
+    let px = value => (typeof(value) == 'number' ? value + 'px' : value);
     let style = {
         color: "red",
         style: "solid",
@@ -72,8 +72,8 @@ function border(id, timeout = 3000, options = undefined) {
     };
     Object.assign(style, options);
     let coordinates = id;
-    if (typeof (id) == "string") {
-        let element = findFormElement(id);
+    if (typeof(id) == "string") {
+        let element = elem(id);
         if (!element) return;
         let rect = element.getBoundingClientRect();
         coordinates = {
@@ -102,8 +102,8 @@ function border(id, timeout = 3000, options = undefined) {
 function arrow(start, end, timeout = 3000, options = undefined) {
     function point(id) {
         if ((id) instanceof Element) return id;
-        if (typeof (id) == "string") return findFormElement(id);
-        if (typeof (id) == "object") return LeaderLine.pointAnchor(document.body, id);
+        if (typeof(id) == "string") return elem(id);
+        if (typeof(id) == "object") return LeaderLine.pointAnchor(document.body, id);
     }
     let node = new LeaderLine(point(start), point(end), options);
     if (timeout) setTimeout(() => { if (node) node.remove() }, timeout);
@@ -122,4 +122,3 @@ function clear() {
 function center() {
     return LeaderLine.pointAnchor(document.body, { x: "50%", y: "50%" });
 }
-
