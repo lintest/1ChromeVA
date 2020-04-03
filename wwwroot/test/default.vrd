@@ -6,7 +6,7 @@
 		ib="File=&quot;C:\1C\DEMO&quot;;">
 	<debug enable="true"
 			protocol="http"
-			url="http://DESKTOP:1560"/>
+			url="http://127.0.0.1:1560"/>
 	<ws enable="false"
 			pointEnableCommon="false"/>
 	<standardOdata enable="false"
