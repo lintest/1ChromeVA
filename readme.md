@@ -1,6 +1,7 @@
-Пример взаимодействия «1С:Предприятие» с браузером Google Chrome
-посредством протокола Chrome DevTools Protocol.
-* https://chromedevtools.github.io/devtools-protocol/
+Пример взаимодействия платформы **«1С:Предприятие»** с браузером **Google Chrome** посредством 
+протокола [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
+Используется для отладки функций автодокументирования и создания видеоинструкций 
+[Vanessa-Automation](https://chromedevtools.github.io/devtools-protocol/).
 
 ```javascript
 {"id":1,"method":"Page.createIsolatedWorld","params":{"frameId":"09C3B2409AA7CF43D46172A9FD8628B4"}}
