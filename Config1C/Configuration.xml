@@ -188,9 +188,11 @@
 			<CommonPicture>VA_Подсистема</CommonPicture>
 			<Role>Администратор</Role>
 			<CommonTemplate>VA_1cWinCtrl</CommonTemplate>
-			<CommonCommand>VA_Управление</CommonCommand>
+			<CommonCommand>VA_УправлениеБраузером</CommonCommand>
+			<CommonCommand>VA_ОписаниеПротокола</CommonCommand>
 			<CommonForm>VA_Управление</CommonForm>
 			<Catalog>VA_ПримерДанных</Catalog>
+			<DataProcessor>VA_1ChromeDev</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

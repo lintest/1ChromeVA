@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗапуститьБраузер" id="24">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗапуститьБраузер</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьБраузерРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="ФормаЗаполнитьКоманды" id="87">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьКоманды</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьКомандыРасширеннаяПодсказка" id="88"/>
+			</Button>
+			<Button name="ФормаЗапуститьКлиентТестирования" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьURL</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьКлиентТестированияРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="Тест" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьТест</CommandName>
+				<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаДемонстрация" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Демонстрация</CommandName>
+				<ExtendedTooltip name="ФормаДемонстрацияРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаСнимокЭкрана" id="36">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СнимокЭкрана</CommandName>
+				<ExtendedTooltip name="ФормаСнимокЭкранаРасширеннаяПодсказка" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаБраузер" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа браузер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа браузер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБраузерРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<InputField name="browser" id="38">
+					<DataPath>Объект.browser</DataPath>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="browserКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="browserРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="StartChoice">ФайлПриложенияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="port" id="84">
+					<DataPath>Объект.port</DataPath>
+					<ContextMenu name="portКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="portРасширеннаяПодсказка" id="86"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаURL" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа URL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа URL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаURLРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<InputField name="URL" id="74">
+					<DataPath>Объект.URL</DataPath>
+					<ContextMenu name="URLКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="URLРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="WS" id="79">
+					<DataPath>Объект.WS</DataPath>
+					<ContextMenu name="WSКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="WSРасширеннаяПодсказка" id="81"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОсновная" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСписок" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>10</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<InputField name="Домен" id="41">
+							<DataPath>Объект.domain</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<Width>10</Width>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ДоменКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ДоменРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">ДоменПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="КомандыБраузера" id="46">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>КомандыБраузера</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КомандыБраузераКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="КомандыБраузераКоманднаяПанель" id="48"/>
+							<ExtendedTooltip name="КомандыБраузераРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="КомандыБраузераСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>КомандыБраузера</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомандыБраузераСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="КомандыБраузераСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомандыБраузераСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>КомандыБраузера</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомандыБраузераСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="КомандыБраузераСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомандыБраузераУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>КомандыБраузера</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомандыБраузераУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="КомандыБраузераУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">КомандыБраузераПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="CommandsName" id="61">
+									<DataPath>КомандыБраузера.name</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="CommandsNameКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="CommandsNameРасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаМетоды" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа методы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа методы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМетодыРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<InputField name="Методыdescription" id="66">
+							<DataPath>Items.КомандыБраузера.CurrentData.description</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Top</TitleLocation>
+							<Width>30</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>4</Height>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="МетодыdescriptionКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="МетодыdescriptionРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<UsualGroup name="ГруппаПараметры" id="69">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="70"/>
+						</UsualGroup>
+						<Table name="ПараметрыКоманды" id="89">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПараметрыКоманды</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыКомандыКонтекстноеМеню" id="90"/>
+							<AutoCommandBar name="ПараметрыКомандыКоманднаяПанель" id="91"/>
+							<ExtendedTooltip name="ПараметрыКомандыРасширеннаяПодсказка" id="92"/>
+							<SearchStringAddition name="ПараметрыКомандыСтрокаПоиска" id="93">
+								<AdditionSource>
+									<Item>ПараметрыКоманды</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКомандыСтрокаПоискаКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="ПараметрыКомандыСтрокаПоискаРасширеннаяПодсказка" id="95"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыКомандыСостояниеПросмотра" id="96">
+								<AdditionSource>
+									<Item>ПараметрыКоманды</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКомандыСостояниеПросмотраКонтекстноеМеню" id="97"/>
+								<ExtendedTooltip name="ПараметрыКомандыСостояниеПросмотраРасширеннаяПодсказка" id="98"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыКомандыУправлениеПоиском" id="99">
+								<AdditionSource>
+									<Item>ПараметрыКоманды</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКомандыУправлениеПоискомКонтекстноеМеню" id="100"/>
+								<ExtendedTooltip name="ПараметрыКомандыУправлениеПоискомРасширеннаяПодсказка" id="101"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПараметрыКомандыname" id="102">
+									<DataPath>ПараметрыКоманды.name</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыКомандыnameКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПараметрыКомандыnameРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ПараметрыКомандыdescription" id="105">
+									<DataPath>ПараметрыКоманды.description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыКомандыdescriptionКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ПараметрыКомандыdescriptionРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ПараметрыКомандыtype" id="108">
+									<DataPath>ПараметрыКоманды.type</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыКомандыtypeКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ПараметрыКомандыtypeРасширеннаяПодсказка" id="110"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.VA_1ChromeDev</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КомандыБраузера" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды браузера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="description" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Description</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПараметрыКоманды" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="description" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Description</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="type" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьТест" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьТест</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьURL" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть URL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть URL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьURL</Action>
+		</Command>
+		<Command name="НовыйИдентификатор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый идентификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НовыйИдентификатор</Action>
+		</Command>
+		<Command name="Демонстрация" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Демонстрация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Демонстрация</Action>
+		</Command>
+		<Command name="УправлениеБраузером" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление браузером</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление браузером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеБраузером</Action>
+		</Command>
+		<Command name="ЗапуститьБраузер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить браузер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить браузер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьБраузер</Action>
+		</Command>
+		<Command name="СнимокЭкрана" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снимок экрана</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снимок экрана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Form</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьСнимокЭкрана</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьКоманды" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКоманды</Action>
+		</Command>
+	</Commands>
+</Form>
