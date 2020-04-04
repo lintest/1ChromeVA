@@ -16,13 +16,13 @@
 		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="6515d4706b4ab342a527e72ddd4c301700000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема" id="b62550c5-e5f4-4e9f-9831-83d0119749ab" configVersion="4cfda6fc0fac9941b6ae783ca5ce27ec00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема.Picture" id="b62550c5-e5f4-4e9f-9831-83d0119749ab.0" configVersion="7b830ea52e662041aa71185f19e5e99600000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="ff3b3898a9b86443a6da6ee7c816a7a300000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="3a9304690ead404cbc10b4b523b82d1d00000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="7d96d79f0c8ea44e887e5eddc0b2aedf00000000"/>
+		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="4ce02b9cc538c647a9eca8f74585fc7300000000"/>
 		<Metadata name="Configuration.VA_1Chrome" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="f74ec6c9934fee4d83352c40af586e1400000000"/>
 		<Metadata name="Configuration.VA_1Chrome.HomePageWorkArea" id="5124725e-0d6b-4ab4-ac29-339a0533862c.8" configVersion="c29a455508adea41bbbbae8ee9296d7700000000"/>
 		<Metadata name="Configuration.VA_1Chrome.MainSectionPicture" id="5124725e-0d6b-4ab4-ac29-339a0533862c.c" configVersion="83b67660db70ec4ab14cf5749260080700000000"/>
 		<Metadata name="Configuration.VA_1Chrome.ManagedApplicationModule" id="5124725e-0d6b-4ab4-ac29-339a0533862c.6" configVersion="774d3872f109c04986e5f4c8d25d709b00000000"/>
-		<Metadata name="DataProcessor.VA_1ChromeDev" id="6ddc69d2-5f54-4acd-94ae-e0ed98089e43" configVersion="2720b2bfa8499c4f809d0c54fc32e02800000000">
+		<Metadata name="DataProcessor.VA_1ChromeDev" id="6ddc69d2-5f54-4acd-94ae-e0ed98089e43" configVersion="37401ff341a2d249ae1f68220d3c24e000000000">
 			<Metadata name="DataProcessor.VA_1ChromeDev.Attribute.browser" id="08fefbd5-967f-4d2e-9a34-643126692988"/>
 			<Metadata name="DataProcessor.VA_1ChromeDev.Attribute.port" id="1c49f299-0411-4202-90fe-afa755796e74"/>
 			<Metadata name="DataProcessor.VA_1ChromeDev.Attribute.domain" id="48286a00-2c02-43af-906a-06554fde7c46"/>
