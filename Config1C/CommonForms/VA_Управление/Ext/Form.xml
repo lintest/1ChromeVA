@@ -87,7 +87,7 @@
 					<v8:content>Группа идентификатор</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="9"/>
@@ -178,7 +178,7 @@
 				<PictureField name="СнимокЭкрана" id="33">
 					<DataPath>СнимокЭкрана</DataPath>
 					<Zoomable>true</Zoomable>
-					<ImageScale>25</ImageScale>
+					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="34"/>
 					<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="35"/>
 				</PictureField>
@@ -384,6 +384,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапуститьКлиентТестирования</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НовыйИдентификатор" id="3">
 			<Title>
@@ -399,6 +400,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НовыйИдентификатор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="Демонстрация" id="4">
 			<Title>
@@ -414,6 +416,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Демонстрация</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УправлениеБраузером" id="5">
 			<Title>
@@ -429,6 +432,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УправлениеБраузером</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗапуститьБраузер" id="6">
 			<Title>
@@ -444,6 +448,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапуститьБраузер</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СнимокЭкрана" id="7">
 			<Title>
@@ -464,6 +469,7 @@
 			</Picture>
 			<Action>ПолучитьСнимокЭкрана</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>

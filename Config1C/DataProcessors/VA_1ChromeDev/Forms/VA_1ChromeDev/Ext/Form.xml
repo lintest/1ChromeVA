@@ -167,6 +167,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>КомандыБраузера</DataPath>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="КомандыБраузераКонтекстноеМеню" id="47"/>
@@ -269,6 +270,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>ПараметрыКоманды</DataPath>
 									<SearchStringLocation>None</SearchStringLocation>
 									<ViewStatusLocation>None</ViewStatusLocation>
@@ -338,6 +340,7 @@
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>РезультатКоманды</DataPath>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="РезультатКомандыКонтекстноеМеню" id="112"/>
@@ -444,7 +447,7 @@
 							<DataPath>СнимокЭкрана</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<Zoomable>true</Zoomable>
-							<ImageScale>25</ImageScale>
+							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="138"/>
 							<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="139"/>
 						</PictureField>
@@ -546,6 +549,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>РезультатJavaScript</DataPath>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
@@ -924,6 +928,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьURL</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="НовыйИдентификатор" id="3">
 			<Title>
@@ -939,6 +944,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НовыйИдентификатор</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УправлениеБраузером" id="5">
 			<Title>
@@ -954,6 +960,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УправлениеБраузером</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗапуститьБраузер" id="6">
 			<Title>
@@ -969,6 +976,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапуститьБраузер</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СнимокСтраницы" id="7">
 			<Title>
@@ -989,6 +997,7 @@
 			</Picture>
 			<Action>ПолучитьСнимокЭкрана</Action>
 			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаполнитьОписание" id="8">
 			<Title>
@@ -1004,6 +1013,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьКоманды</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СкопироватьВБуферОбмена" id="9">
 			<Title>
@@ -1019,6 +1029,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СкопироватьВБуферОбмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПолучитьТекстHTML" id="4">
 			<Title>
@@ -1034,6 +1045,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьТекстHTML</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПолучитьФрагментHTML" id="10">
 			<Title>
@@ -1049,6 +1061,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьФрагментHTML</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВыполнитьJavaScript" id="11">
 			<Title>
@@ -1064,6 +1077,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьJavaScript</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
