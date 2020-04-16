@@ -19,16 +19,6 @@
 				<CommandName>Form.Command.ВыполнитьТест</CommandName>
 				<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="2"/>
 			</Button>
-			<Button name="ФормаДемонстрация" id="17">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Демонстрация</CommandName>
-				<ExtendedTooltip name="ФормаДемонстрацияРасширеннаяПодсказка" id="18"/>
-			</Button>
-			<Button name="ФормаСнимокЭкрана" id="36">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СнимокЭкрана</CommandName>
-				<ExtendedTooltip name="ФормаСнимокЭкранаРасширеннаяПодсказка" id="37"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -146,44 +136,20 @@
 					<ContextMenu name="URLКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="URLРасширеннаяПодсказка" id="14"/>
 				</InputField>
+				<Button name="ФормаСнимокЭкрана" id="36">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СнимокЭкрана</CommandName>
+					<ExtendedTooltip name="ФормаСнимокЭкранаРасширеннаяПодсказка" id="37"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаКартинка" id="31">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа картинка</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа картинка</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКартинкаРасширеннаяПодсказка" id="32"/>
-			<ChildItems>
-				<InputField name="JavaScript" id="19">
-					<DataPath>JavaScript</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<PasswordMode>false</PasswordMode>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="JavaScriptКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="JavaScriptРасширеннаяПодсказка" id="21"/>
-				</InputField>
-				<PictureField name="СнимокЭкрана" id="33">
-					<DataPath>СнимокЭкрана</DataPath>
-					<Zoomable>true</Zoomable>
-					<FileDragMode>AsFile</FileDragMode>
-					<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="34"/>
-					<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="35"/>
-				</PictureField>
-			</ChildItems>
-		</UsualGroup>
+		<PictureField name="СнимокЭкрана" id="33">
+			<DataPath>СнимокЭкрана</DataPath>
+			<Zoomable>true</Zoomable>
+			<FileDragMode>AsFile</FileDragMode>
+			<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="35"/>
+		</PictureField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -216,21 +182,6 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>URL</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="JavaScript" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Java script</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -353,7 +304,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить тест</v8:content>
+					<v8:content>Демонстрация</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -400,22 +351,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НовыйИдентификатор</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="Демонстрация" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Демонстрация</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Демонстрация</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>Демонстрация</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УправлениеБраузером" id="5">

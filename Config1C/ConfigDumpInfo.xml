@@ -12,13 +12,11 @@
 		<Metadata name="CommonCommand.VA_ОписаниеПротокола.CommandModule" id="4bdab97c-512c-4d77-a165-5f4a85f30d3b.2" configVersion="3fc27732c5e5e04fb29b155de5bd0eba00000000"/>
 		<Metadata name="CommonCommand.VA_УправлениеБраузером" id="5aa82095-1e19-4bc0-8099-63acd47b8d01" configVersion="1bf3659a3dbc57409a89483708d62e0600000000"/>
 		<Metadata name="CommonCommand.VA_УправлениеБраузером.CommandModule" id="5aa82095-1e19-4bc0-8099-63acd47b8d01.2" configVersion="bc9936a1114c274e9765ad7b36f5dd4500000000"/>
-		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="864c57072f3f3245a4e9c016d2b8d1f200000000"/>
-		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="be582d3920fc5442aae4ab59b114073400000000"/>
+		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="b1a0a3077bc2eb4f867f5d8a0516530d00000000"/>
+		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="477079f82dd9444495680698ca16eba600000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема" id="b62550c5-e5f4-4e9f-9831-83d0119749ab" configVersion="4cfda6fc0fac9941b6ae783ca5ce27ec00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема.Picture" id="b62550c5-e5f4-4e9f-9831-83d0119749ab.0" configVersion="7b830ea52e662041aa71185f19e5e99600000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14" configVersion="7d96d79f0c8ea44e887e5eddc0b2aedf00000000"/>
-		<Metadata name="CommonTemplate.VA_1cWinCtrl.Template" id="0ee3277d-7c5d-4359-9bac-b8e79ab65b14.0" configVersion="4ce02b9cc538c647a9eca8f74585fc7300000000"/>
-		<Metadata name="Configuration.VA_1Chrome" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="23b97be0d0f39d43b1b489d93fe095df00000000"/>
+		<Metadata name="Configuration.VA_1Chrome" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="d87d388b2d0d1841b49b6e4e337fac8200000000"/>
 		<Metadata name="Configuration.VA_1Chrome.HomePageWorkArea" id="5124725e-0d6b-4ab4-ac29-339a0533862c.8" configVersion="c29a455508adea41bbbbae8ee9296d7700000000"/>
 		<Metadata name="Configuration.VA_1Chrome.MainSectionPicture" id="5124725e-0d6b-4ab4-ac29-339a0533862c.c" configVersion="83b67660db70ec4ab14cf5749260080700000000"/>
 		<Metadata name="Configuration.VA_1Chrome.ManagedApplicationModule" id="5124725e-0d6b-4ab4-ac29-339a0533862c.6" configVersion="a2164f7fdbbdd14ea501ba965ae521d400000000"/>
