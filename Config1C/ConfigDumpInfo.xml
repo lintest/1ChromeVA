@@ -12,8 +12,8 @@
 		<Metadata name="CommonCommand.VA_ОписаниеПротокола.CommandModule" id="4bdab97c-512c-4d77-a165-5f4a85f30d3b.2" configVersion="3fc27732c5e5e04fb29b155de5bd0eba00000000"/>
 		<Metadata name="CommonCommand.VA_УправлениеБраузером" id="5aa82095-1e19-4bc0-8099-63acd47b8d01" configVersion="1bf3659a3dbc57409a89483708d62e0600000000"/>
 		<Metadata name="CommonCommand.VA_УправлениеБраузером.CommandModule" id="5aa82095-1e19-4bc0-8099-63acd47b8d01.2" configVersion="bc9936a1114c274e9765ad7b36f5dd4500000000"/>
-		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="406396f732299947b9a4c6954ace498c00000000"/>
-		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="b7d6449ea4712843bc309a64c199220400000000"/>
+		<Metadata name="CommonForm.VA_Управление" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf" configVersion="a6c3588d7f2cd5479bd9f3d30697e98000000000"/>
+		<Metadata name="CommonForm.VA_Управление.Form" id="15ccfc37-16e5-439d-9ae2-e93d22b73edf.0" configVersion="daf81ceeb6488c47b4d3cfa2bb7665d100000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема" id="b62550c5-e5f4-4e9f-9831-83d0119749ab" configVersion="4cfda6fc0fac9941b6ae783ca5ce27ec00000000"/>
 		<Metadata name="CommonPicture.VA_Подсистема.Picture" id="b62550c5-e5f4-4e9f-9831-83d0119749ab.0" configVersion="7b830ea52e662041aa71185f19e5e99600000000"/>
 		<Metadata name="Configuration.VA_1Chrome" id="837afeca-a64d-402b-b622-3f59ae7b31bf" configVersion="d87d388b2d0d1841b49b6e4e337fac8200000000"/>
