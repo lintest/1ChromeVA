@@ -14,10 +14,16 @@
 				<CommandName>Form.Command.ЗапуститьКлиентТестирования</CommandName>
 				<ExtendedTooltip name="ФормаЗапуститьКлиентТестированияРасширеннаяПодсказка" id="4"/>
 			</Button>
-			<Button name="Тест" id="1">
+			<Button name="ФормаДемонстрация" id="1">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВыполнитьТест</CommandName>
-				<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="2"/>
+				<CommandName>Form.Command.Демонстрация</CommandName>
+				<ExtendedTooltip name="ФормаДемонстрацияРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаОчиститьКартинку" id="52">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОчиститьКартинку</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОчиститьКартинкуРасширеннаяПодсказка" id="53"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -146,6 +152,7 @@
 		<PictureField name="СнимокЭкрана" id="33">
 			<DataPath>СнимокЭкрана</DataPath>
 			<Zoomable>true</Zoomable>
+			<ImageScale>50</ImageScale>
 			<FileDragMode>AsFile</FileDragMode>
 			<ContextMenu name="СнимокЭкранаКонтекстноеМеню" id="34"/>
 			<ExtendedTooltip name="СнимокЭкранаРасширеннаяПодсказка" id="35"/>
@@ -300,7 +307,7 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="ВыполнитьТест" id="1">
+		<Command name="Демонстрация" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -310,7 +317,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить тест</v8:content>
+					<v8:content>Демонстрация</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -405,6 +412,21 @@
 			<Action>ПолучитьСнимокЭкрана</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьКартинку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьКартинку</Action>
 		</Command>
 	</Commands>
 </Form>

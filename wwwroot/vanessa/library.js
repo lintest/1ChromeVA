@@ -99,6 +99,28 @@ function border(id, timeout = 3000, options = undefined) {
     return node;
 }
 
+function rect(text, timeout = 3000, options = undefined) {
+    let px = value => (typeof(value) == 'number' ? value + 'px' : value);
+    let node = document.createElement('div');
+    node.innerHTML = text;
+    node.style.fontSize = '140%';
+    node.style.position = 'fixed';
+    node.style.zIndex = 999999;
+    node.style.top = '3em';
+    node.style.right = '3em';
+    node.style.borderWidth = '0.2em';
+    node.style.borderStyle = 'solid';
+    node.style.borderColor = 'red';
+    node.style.boxShadow = '0 0 1em #333333';
+    node.style.backgroundColor = 'white';
+    node.style.padding = '1em';
+    node.style.borderRadius = '1em';
+    window.top.document.body.appendChild(node);
+    if (timeout) setTimeout(() => { if (node) node.remove() }, timeout);
+    customDrawElements.push(node);
+    return node;
+};
+
 function arrow(start, end, timeout = 3000, options = undefined) {
     function point(id) {
         if ((id) instanceof Element) return id;
