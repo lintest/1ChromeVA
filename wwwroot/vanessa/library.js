@@ -35,6 +35,10 @@ function command(title) {
     return $('div.funcCmdTxt:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
 }
 
+function page(id) {
+    return $('div.tabsItem:visible').filter((i, e) => e.id.endsWith('_' + id))[0];
+}
+
 function fullscreen(mode) {
 
     var elem = document.documentElement;
