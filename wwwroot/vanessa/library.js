@@ -27,6 +27,14 @@ function elem(id) {
     return element;
 }
 
+function theme(title) {
+    return $('span.themeBoxName:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
+}
+
+function command(title) {
+    return $('div.funcCmdTxt:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
+}
+
 function fullscreen(mode) {
 
     var elem = document.documentElement;
