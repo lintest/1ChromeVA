@@ -21,12 +21,6 @@ function selected() {
     return getActiveElement();
 }
 
-function elem(id) {
-    let element = $('span.framePress:visible').filter((i, e) => e.firstChild.id.endsWith('_' + id))[0];
-    if (!element) element = $('label.field:visible').filter((i, e) => (e.id.endsWith('_' + id)))[0];
-    return element;
-}
-
 function theme(title) {
     return $('span.themeBoxName:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
 }
@@ -39,39 +33,18 @@ function page(id) {
     return $('div.tabsItem:visible').filter((i, e) => e.id.endsWith('_' + id))[0];
 }
 
-function fullscreen(mode) {
+function button(id) {
+    return $('span.framePress:visible').filter((i, e) => e.firstChild.id.endsWith('_' + id))[0];
+}
 
-    var elem = document.documentElement;
+function field(id) {
+    return $('label.field:visible').filter((i, e) => (e.id.endsWith('_' + id)))[0];
+}
 
-    function openFullscreen() {
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-            elem.msRequestFullscreen();
-        }
-    }
-
-    function closeFullscreen() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.mozCancelFullScreen) { /* Firefox */
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE/Edge */
-            document.msExitFullscreen();
-        }
-    }
-
-    if (mode) {
-        openFullscreen();
-    } else {
-        closeFullscreen();
-    }
+function elem(id) {
+    let element = field(id);
+    if (!element) element = button(id);
+    return element;
 }
 
 function border(id, timeout = 3000, options = undefined) {
@@ -85,9 +58,11 @@ function border(id, timeout = 3000, options = undefined) {
     Object.assign(style, options);
     let coordinates = id;
     if (typeof(id) == "string") {
-        let element = elem(id);
-        if (!element) return;
-        let rect = element.getBoundingClientRect();
+        id = elem(id);
+        if (!id) return;
+    }
+    if (id instanceof Element) {
+        let rect = id.getBoundingClientRect();
         coordinates = {
             left: rect.left - (style.margin + style.size),
             top: rect.top - (style.margin + style.size),
