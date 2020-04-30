@@ -22,33 +22,60 @@ function selected() {
 }
 
 function theme(title) {
-    return $('span.themeBoxName:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
+    return $('.themeBoxName:visible').filter((i, e) => $(e).text() == title)[0];
 }
 
 function command(title) {
-    return $('div.funcCmdTxt:visible').filter((i, e) => ($(e.firstChild).text() == title))[0];
+    return $('.funcCmdTxt:visible,.functionItemBox:visible').filter((i, e) => $(e).text() == title)[0];
 }
 
-function page(id) {
-    return $('div.tabsItem:visible').filter((i, e) => e.id.endsWith('_' + id))[0];
+function navigationItem(title) {
+    return $('.navigationItem:visible').filter((i, e) => $(e).text() == title).last()[0];
 }
 
-function button(id) {
-    return $('span.framePress:visible').filter((i, e) => e.firstChild.id.endsWith('_' + id))[0];
+function getActiveFormPrefix() {
+    function prefix(e) {
+        return e.id.substr(0, e.id.indexOf('mainGroup'))
+    }
+    var e = document.activeElement;
+    while (e) {
+        if ($(e).hasClass('mainGroup')) return prefix(e);
+        e = e.parentElement;
+    }
+    e = $('.mainGroup').last()[0];
+    if (e) return prefix(e);
 }
 
-function field(id) {
-    return $('label.field:visible').filter((i, e) => (e.id.endsWith('_' + id)))[0];
+function isElementVisible(e) {
+    return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
 }
 
-function elem(id) {
-    let element = field(id);
-    if (!element) element = button(id);
-    return element;
+function getFormElement(id) {
+    function Z(s) {
+        return $(s).filter((i, e) => isElementVisible(e)).last()[0];
+    }
+    let e, prefix = getActiveFormPrefix();
+    if (e = Z('#' + prefix + id)) return e;
+    if (e = Z('#thpage_' + prefix + id)) return e;
+    if (e = Z('#' + prefix + 'popup_' + id)) return e;
+    if (e = Z('#' + prefix + id + '\\#title_text')) return e.firstChild;
+}
+
+function buttonMore(id) {
+    return getFormElement('allActions' + id);
+}
+
+function elem(id, n = 0) {
+    if (n == 0) return getFormElement(id);
+    return getFormElement(id + '\\#' + n + '\\#radio')
+}
+
+function label(id) {
+    return $('#' + elem(id).id + '\\#title_text')[0];
 }
 
 function border(id, timeout = 3000, options = undefined) {
-    let px = value => (typeof(value) == 'number' ? value + 'px' : value);
+    let px = value => (typeof value == 'number' ? value + 'px' : value);
     let style = {
         color: "red",
         style: "solid",
@@ -57,7 +84,7 @@ function border(id, timeout = 3000, options = undefined) {
     };
     Object.assign(style, options);
     let coordinates = id;
-    if (typeof(id) == "string") {
+    if (typeof id == "string") {
         id = elem(id);
         if (!id) return;
     }
@@ -69,6 +96,22 @@ function border(id, timeout = 3000, options = undefined) {
             width: rect.width + style.margin * 2,
             height: rect.height + style.margin * 2,
         }
+    } else if (id instanceof Array) {
+        coordinates = { left: [], top: [], right: [], bottom: [] };
+        id.forEach(e => {
+            if (typeof e == "string") e = elem(e);
+            if (e instanceof Element) {
+                let rect = e.getBoundingClientRect();
+                for (let prop in coordinates)
+                    coordinates[prop].push(rect[prop]);
+            }
+        });
+        coordinates.left = Math.min.apply(null, coordinates.left) - (style.margin + style.size);
+        coordinates.top = Math.min.apply(null, coordinates.top) - (style.margin + style.size);
+        coordinates.right = Math.max.apply(null, coordinates.right) + style.margin - style.size;
+        coordinates.bottom = Math.max.apply(null, coordinates.bottom) + style.margin - style.size;
+        coordinates.width = coordinates.right - coordinates.left;
+        coordinates.height = coordinates.bottom - coordinates.top;
     }
     let node = document.createElement('div');
     node.style.position = 'fixed';
@@ -87,7 +130,7 @@ function border(id, timeout = 3000, options = undefined) {
 }
 
 function rect(text, timeout = 3000, options = undefined) {
-    let px = value => (typeof(value) == 'number' ? value + 'px' : value);
+    let px = value => (typeof value == 'number' ? value + 'px' : value);
     let node = document.createElement('div');
     node.innerHTML = text;
     node.style.fontSize = '140%';
@@ -111,8 +154,8 @@ function rect(text, timeout = 3000, options = undefined) {
 function arrow(start, end, timeout = 3000, options = undefined) {
     function point(id) {
         if ((id) instanceof Element) return id;
-        if (typeof(id) == "string") return elem(id);
-        if (typeof(id) == "object") return LeaderLine.pointAnchor(document.body, id);
+        if (typeof id == "string") return elem(id);
+        if (typeof id == "object") return LeaderLine.pointAnchor(document.body, id);
     }
     let node = new LeaderLine(point(start), point(end), options);
     if (timeout) setTimeout(() => { if (node) node.remove() }, timeout);
