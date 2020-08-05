@@ -11,10 +11,6 @@
 				<xr:ObjectId>0b0b8c1d-6060-4b3c-bb5e-2ed380fb630d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
-				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>6f73e80f-a03e-4631-9dc4-4c3e70309cef</xr:ObjectId>
-			</xr:ContainedObject>
-			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
 				<xr:ObjectId>c333191a-e372-4597-b929-760e80dd8337</xr:ObjectId>
 			</xr:ContainedObject>
@@ -27,8 +23,12 @@
 				<xr:ObjectId>27b07081-e483-417d-a9a4-59091c2eaf16</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>6f73e80f-a03e-4631-9dc4-4c3e70309cef</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>4e3e2795-9198-4573-929c-aafdc5e12ba4</xr:ObjectId>
+				<xr:ObjectId>0855eb16-d887-4a8b-8115-e8732cd01427</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -183,7 +183,7 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_10</CompatibilityMode>
+			<CompatibilityMode>Version8_3_12</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -191,10 +191,16 @@
 			<Subsystem>VA_Подсистема</Subsystem>
 			<CommonPicture>VA_Подсистема</CommonPicture>
 			<Role>Администратор</Role>
+			<CommonTemplate>VA_jQuery</CommonTemplate>
+			<CommonTemplate>VA_Library</CommonTemplate>
 			<CommonCommand>VA_УправлениеБраузером</CommonCommand>
 			<CommonCommand>VA_ОписаниеПротокола</CommonCommand>
+			<Constant>ТестируемаяОбработка</Constant>
+			<Constant>ТестируемаяБиблиотека</Constant>
 			<CommonForm>VA_Управление</CommonForm>
+			<CommonForm>НастройкаЗапуска</CommonForm>
 			<Catalog>VA_ПримерДанных</Catalog>
+			<DataProcessor>ОткрытьТестируемуОбработку</DataProcessor>
 			<DataProcessor>VA_1ChromeDev</DataProcessor>
 		</ChildObjects>
 	</Configuration>

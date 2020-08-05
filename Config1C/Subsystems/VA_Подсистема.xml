@@ -24,6 +24,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.VA_УправлениеБраузером</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.VA_1ChromeDev</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.VA_ОписаниеПротокола</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОткрытьТестируемуОбработку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТестируемаяОбработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">768e2e69-5708-48d3-bc5e-886a5bada79c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТестируемаяБиблиотека</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаЗапуска</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
